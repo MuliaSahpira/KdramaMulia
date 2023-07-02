@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    tools:context=".Activity.DetailActivity">
+
+    <ImageView
+        android:id="@+id/iv_gambar"
+        android:layout_width="match_parent"
+        android:layout_height="280dp"
+        android:adjustViewBounds="true"
+        android:scaleType="fitXY"/>
+
+    <TextView
+        android:id="@+id/tv_gambar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Link Gambar"
+        android:textSize="21sp"
+        android:visibility="gone"/>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="250dp"
+        android:background="@drawable/bg_half_rounder">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginBottom="20dp">
+
+                <TextView
+                    android:id="@+id/tv_judul"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Judul"
+                    android:gravity="center"
+                    android:textSize="23sp"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:id="@+id/tv_hangul"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_judul"
+                    android:text="Hangul"
+                    android:gravity="center"
+                    android:textSize="18sp"/>
+
+                <TextView
+                    android:id="@+id/tv_genre"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginTop="20dp"
+                    android:text="Genre"
+                    android:textSize="14sp"
+                    android:layout_below="@+id/tv_hangul"/>
+
+                <TextView
+                    android:id="@+id/tv_pembatas"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:textSize="14sp"
+                    android:text=" | "
+                    android:layout_toRightOf="@+id/tv_genre"
+                    android:layout_below="@+id/tv_hangul"/>
+                <TextView
+                    android:id="@+id/tv_episode"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:text="episode"
+                    android:textSize="14sp"
+                    android:layout_toRightOf="@+id/tv_pembatas"
+                    android:layout_below="@+id/tv_hangul"/>
+
+                <ImageView
+                    android:id="@+id/iv_star"
+                    android:layout_width="18dp"
+                    android:layout_height="18dp"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginTop="4dp"
+                    android:src="@drawable/baseline_star_24"
+                    android:textSize="14sp"
+                    android:layout_below="@+id/tv_tahunRilis"/>
+
+                <TextView
+                    android:id="@+id/tv_rating"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Rating Drakor"
+                    android:layout_marginTop="3dp"
+                    android:layout_marginEnd="5dp"
+                    android:textSize="14sp"
+                    android:layout_toRightOf="@+id/iv_star"
+                    android:layout_below="@+id/tv_tahunRilis"/>
+
+                <TextView
+                    android:id="@+id/tv_tahunRilis"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginTop="3dp"
+                    android:textSize="14sp"
+                    android:text="Tahun Rilis "
+                    android:layout_below="@+id/tv_genre"/>
+                <TextView
+                    android:id="@+id/tv_rilis"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
+                    android:text="Rilis"
+                    android:textSize="14sp"
+                    android:layout_toRightOf="@+id/tv_tahunRilis"
+                    android:layout_below="@+id/tv_genre"/>
+
+                <TextView
+                    android:id="@+id/tv_tulisanSinopsis"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="23dp"
+                    android:layout_marginStart="5dp"
+                    android:text="SINOPSIS"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:layout_below="@+id/tv_rating"/>
+
+                <TextView
+                    android:id="@+id/tv_sinopsis"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Sinopsis"
+                    android:layout_below="@+id/tv_tulisanSinopsis"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginTop="3dp"
+                    android:textSize="14sp"/>
+
+                <TextView
+                    android:id="@+id/tv_tulisanPemeran"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="23dp"
+                    android:layout_marginStart="5dp"
+                    android:text="PEMERAN"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:layout_below="@+id/tv_sinopsis"/>
+
+                <TextView
+                    android:id="@+id/tv_pemeran"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Pemeran"
+                    android:layout_below="@+id/tv_tulisanPemeran"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginTop="3dp"
+                    android:textSize="14sp"/>
+
+            </RelativeLayout>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+</RelativeLayout>

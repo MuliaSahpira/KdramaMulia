@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/kdramabg"
+    tools:context=".Activity.TambahActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tambah Data Drakor"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center_horizontal"
+            android:layout_marginBottom="32dp"/>
+
+            <EditText
+                android:id="@+id/et_gambar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Link Poster Drakor"
+                android:textStyle="bold"
+                android:drawableStart="@drawable/ic_link"
+                android:inputType="text"
+                android:background="@drawable/bg_corner"
+                android:backgroundTint="#A6FFFFFF"
+                android:padding="20dp"
+                android:drawablePadding="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp"/>
+
+        <EditText
+            android:id="@+id/et_judul"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Judul Drakor"
+            android:textStyle="bold"
+            android:drawableStart="@drawable/ic_title"
+            android:inputType="text"
+            android:background="@drawable/bg_corner"
+            android:backgroundTint="#A6FFFFFF"
+            android:padding="20dp"
+            android:drawablePadding="20dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"/>
+
+        <EditText
+            android:id="@+id/et_hangul"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Hangul Drakor"
+            android:textStyle="bold"
+            android:drawableStart="@drawable/ic_title"
+            android:inputType="text"
+            android:background="@drawable/bg_corner"
+            android:backgroundTint="#A6FFFFFF"
+            android:padding="20dp"
+            android:drawablePadding="20dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"/>
+
+        <EditText
+            android:id="@+id/et_sinopsis"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Sinopsis"
+            android:textStyle="bold"
+            android:drawableStart="@drawable/ic_sinopsis"
+            android:inputType="text"
+            android:background="@drawable/bg_corner"
+            android:backgroundTint="#A6FFFFFF"
+            android:padding="20dp"
+            android:drawablePadding="20dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"/>
+
+        <EditText
+            android:id="@+id/et_rilis"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Tahun Rilis"
+            android:textStyle="bold"
+            android:drawableStart="@drawable/ic_rilis"
+            android:inputType="text"
+            android:background="@drawable/bg_corner"
+            android:backgroundTint="#A6FFFFFF"
+            android:padding="20dp"
+            android:drawablePadding="20dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"/>
+
+        <EditText
+            android:id="@+id/et_genre"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Genre Drakor"
+            android:textStyle="bold"
+            android:drawableStart="@drawable/ic_genre"
+            android:inputType="text"
+            android:background="@drawable/bg_corner"
+            android:backgroundTint="#A6FFFFFF"
+            android:padding="20dp"
+            android:drawablePadding="20dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"/>
+
+        <EditText
+            android:id="@+id/et_rating"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Rating Drakor"
+            android:textStyle="bold"
+            android:drawableStart="@drawable/baseline_star_24"
+            android:drawableTint="#000000"
+            android:inputType="text"
+            android:background="@drawable/bg_corner"
+            android:backgroundTint="#A6FFFFFF"
+            android:padding="20dp"
+            android:drawablePadding="20dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"/>
+
+        <EditText
+            android:id="@+id/et_episode"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Jumlah Episode Drakor"
+            android:textStyle="bold"
+            android:drawableStart="@drawable/ic_episode"
+            android:inputType="text"
+            android:background="@drawable/bg_corner"
+            android:backgroundTint="#A6FFFFFF"
+            android:padding="20dp"
+            android:drawablePadding="20dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"/>
+
+        <EditText
+            android:id="@+id/et_pemeran"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nama Pemeran Drakor"
+            android:textStyle="bold"
+            android:drawableStart="@drawable/ic_pemeran"
+            android:inputType="text"
+            android:background="@drawable/bg_corner"
+            android:backgroundTint="#A6FFFFFF"
+            android:padding="20dp"
+            android:drawablePadding="20dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"/>
+
+
+        <Button
+            android:id="@+id/btn_simpan"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginBottom="16dp"
+            android:text="Simpan"
+            android:textStyle="bold"
+            android:textSize="21sp"
+            android:backgroundTint="#B3A84448"
+            android:textColor="@color/black"/>
+    </LinearLayout>
+
+
+
+</ScrollView>
